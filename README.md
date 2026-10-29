@@ -53,3 +53,11 @@ Last initial deployment: 29 October 2026.
 Supported locale codes: `en`, `ja`, `ko`, `zh-Hans`, `zh-Hant`, `id`, `vi`, `th`, `hi`, `es`, `pt-BR`, `fr`, `de`. Each privacy category and the preliminary site terms have a static translated route, e.g. `/privacy/doublitz/ja/` and `/terms/ja/`. Original English routes remain unchanged, and all pages have a visible language switcher. The translated source drafts live in `i18n/legal-part1.json` and `i18n/legal-part2.json`.
 
 **Critical:** These localized pages are pre-release planning drafts, not approved legal policies. Machine-assisted translation requires native-speaker/legal review where applicable. Verify actual Android release SDK/data collection before using any page as an app-store policy URL. Some source strings are summarized translations rather than clause-for-clause legal equivalences; finalize the canonical English policy and regenerate translations before publication.
+
+## Unstuck Arrow v1.17 privacy audit update (29 October 2026)
+
+Unstuck Arrow's original AdMob URL `/privacy/unstuck-arrow/` and its 13 translated-language routes now reflect the v1.17 SDK/code privacy audit rather than generic future-feature guesses. They cover UMP, AdMob, Play Games, Billing, local gameplay data, service/backup boundaries, player controls and release blockers.
+
+**All 13 languages remain explicitly marked as pre-release drafts — not ready for Google Play/AdMob policy submission or certified GDPR compliance.** The audited build did not provide live Android traffic captures, finalized Console vendors, actual live Play Games/Billing IDs or legal operator details. The updated notices require legal accuracy review and translation review. See `docs/unstuck-arrow-privacy-release-checklist.md`.
+
+Other games' policy pages are intentionally unchanged.
