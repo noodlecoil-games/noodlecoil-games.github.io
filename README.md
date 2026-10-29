@@ -47,3 +47,9 @@ The public site uses a dedicated studio contact address and intentionally does n
 Edit any `index.html` file in the browser or clone the repository locally. Site styles live in `assets/style.css`, the favicon/logo in `assets/mark.svg`, and the small mobile-menu script in `assets/site.js`.
 
 Last initial deployment: 29 October 2026.
+
+## Multilingual legal pages (13 locales)
+
+Supported locale codes: `en`, `ja`, `ko`, `zh-Hans`, `zh-Hant`, `id`, `vi`, `th`, `hi`, `es`, `pt-BR`, `fr`, `de`. Each privacy category and the preliminary site terms have a static translated route, e.g. `/privacy/doublitz/ja/` and `/terms/ja/`. Original English routes remain unchanged, and all pages have a visible language switcher. The translated source drafts live in `i18n/legal-part1.json` and `i18n/legal-part2.json`.
+
+**Critical:** These localized pages are pre-release planning drafts, not approved legal policies. Machine-assisted translation requires native-speaker/legal review where applicable. Verify actual Android release SDK/data collection before using any page as an app-store policy URL. Some source strings are summarized translations rather than clause-for-clause legal equivalences; finalize the canonical English policy and regenerate translations before publication.

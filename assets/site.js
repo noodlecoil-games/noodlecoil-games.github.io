@@ -15,3 +15,5 @@
   }
   document.querySelectorAll("[data-year]").forEach(el => { el.textContent = String(new Date().getFullYear()); });
 })();
+// Language navigation: static pages, no cookies or tracking.
+document.querySelectorAll("select[data-language-switch]").forEach(select => select.addEventListener("change", event => { const path=event.target.value; if (path.startsWith("/") && !path.startsWith("//")) window.location.assign(path); }));
