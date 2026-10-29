@@ -1,0 +1,356 @@
+{
+  "source": "Unstuck Arrow v1.17 privacy-audit.md, 2026-10-29",
+  "status": "audited technical draft; translation and legal review pending",
+  "locales": {
+    "en": {
+      "language": "English",
+      "title": "Unstuck Arrow — privacy information",
+      "subtitle": "Privacy information informed by the v1.17 Android audit.",
+      "badge": "AUDITED BUILD · PRE-RELEASE DRAFT",
+      "notice": "This is not the final store-ready privacy policy. The v1.17 code, libraries and manifest were inspected, but live Android SDK traffic, final AdMob partners, production service settings and the publisher's legal identity have not been verified. The final policy must be completed and reviewed before release.",
+      "meta": "Reviewed build: v1.17 (versionCode 27), 29 October 2026; pilot ads use test units.",
+      "sections": [
+        [
+          "Developer and contact",
+          "Unstuck Arrow is developed under the public name Noodlecoil Games. The legal publisher and data controller have not yet been finalized. For privacy questions or requests, write to noodlecoilgames@gmail.com."
+        ],
+        [
+          "Information stored on the device",
+          "The game saves progress, levels, mode and difficulty, tutorial completion, sound and language settings, hint credits and ad-frequency information locally. It also stores recent completed-run details (up to 80 summaries), scores, achievement-related counters, dated leaderboard totals and account-scoped upload checkpoints. A local event counter is not sent to a Noodlecoil analytics server. Some accumulated totals have no automatic expiry."
+        ],
+        [
+          "Consent choices (Google UMP)",
+          "Google User Messaging Platform (UMP 4.0.0) checks consent information at game launch and provides Google's consent and Privacy Options screens when required. Google may receive the app identifier, consent-related values, device model and operating-system details, language, screen characteristics and connection/IP information. Consent choices are stored by the SDK on the device. Changing preferences does not erase data already processed by Google; SDK components can initialize before an explicit ad request."
+        ],
+        [
+          "Advertising (Google AdMob)",
+          "Google Mobile Ads 25.5.0 is integrated for interstitial and optional rewarded advertisements. The inspected pilot/review builds use sample ad units; production advertising is not enabled. Ad loads and displays are gated by UMP's canRequestAds result. Depending on device, consent and configuration, Google's ad services and authorized ad partners may process advertising or app identifiers, IP-derived approximate location, app/device details, ad impressions and interactions, diagnostics or performance data. The game does not request precise GPS permission. Refusing personalized ads does not block gameplay and does not guarantee that every Google request stops; limited or non-personalized ads may still be possible."
+        ],
+        [
+          "Play Games leaderboards",
+          "Google Play Games Services v2 22.1.0 is included for optional account sign-in and an all-time cumulative leaderboard. It may process Google player identifiers, public display names, uploaded scores and ranking information; other players may see names, scores and ranks. SDK initialization or sign-in checks may happen automatically. Campaign progress and complete move histories are not uploaded as cloud saves. Live Play Games IDs were not configured in the audited pilot/review build."
+        ],
+        [
+          "Google Play Billing and Premium",
+          "Google Play Billing 8.3.0 is integrated for a possible non-consumable remove_ads purchase. When configured, Google handles payments; the game can receive purchase state, receipt or purchase-token references and cache verified entitlement information in private app storage. It does not receive full payment-card numbers. Ownership checks may run at startup or resume. Premium suppresses automatic interstitials, while optional rewarded ads can remain available. Production Billing was not configured in the audited builds."
+        ],
+        [
+          "Other providers, permissions and backups",
+          "No Noodlecoil-operated backend, Firebase Analytics, Crashlytics, camera, microphone, contact or precise-location permission was found. However, Google SDKs and their transitive measurement/diagnostic components are present; the absence of a custom analytics service does not mean no Google telemetry. Google services and ad partners may retain information under their own policies. Android backup is enabled: some preferences and SDK files may be backed up or restored; WebView progress and Billing receipt files are excluded by the app's explicit backup rules. Opening this policy also contacts GitHub Pages and your browser provider."
+        ],
+        [
+          "Your controls, retention and deletion",
+          "You can play without agreeing to personalized ads or signing in to Play Games. When required, Settings → Privacy Options opens Google's choices again. Android Settings → Apps → Unstuck Arrow → Storage → Clear data, or uninstalling, normally removes local app data; this does not delete Google Play Games leaderboard data, Google purchase records, advertising records or all possible cloud backups. Google Play Games data deletion, Google Play purchase controls and Android advertising privacy controls are separate. No in-game delete-all button or universal provider-deletion service was found. Contact noodlecoilgames@gmail.com with requests."
+        ],
+        [
+          "Children and age targeting",
+          "The audited configuration assumes a general audience, with no in-game age collection or age gate; the under-age flag is false by default unless a child-directed build is selected. Target age and any additional child-specific measures must be reviewed before release."
+        ],
+        [
+          "Items still to finalize before publication",
+          "Confirm the legal publisher/controller and contact details; target audience; actual AdMob message publication, partners and vendors; real Play Games/Billing configuration; actual native SDK traffic; purposes and lawful bases; retention periods, international transfers and user rights; and all applicable Play Console Data safety disclosures. Review the translations and ensure the final in-app policy link points to the reviewed notice."
+        ]
+      ]
+    },
+    "ja": {
+      "language": "日本語",
+      "title": "Unstuck Arrow — プライバシー情報",
+      "subtitle": "Android 版 v1.17 の監査に基づくプライバシー情報です。",
+      "badge": "監査済みビルド・公開前の草案",
+      "notice": "これはアプリストア提出用の最終的なプライバシーポリシーではありません。v1.17 のコード、ライブラリ、マニフェストは確認しましたが、Android 端末での実際の SDK 通信、AdMob の最終提携先、本番設定、発行者の法的情報は未確認です。公開前に最終版の確認が必要です。",
+      "meta": "監査対象：v1.17（versionCode 27）、2026年10月29日。テスト版ではサンプル広告を使用。",
+      "sections": [
+        [
+          "開発元とお問い合わせ",
+          "Unstuck Arrow は Noodlecoil Games の名前で開発されています。正式な発行者およびデータ管理者はまだ確定していません。プライバシーに関するお問い合わせやご請求は noodlecoilgames@gmail.com までご連絡ください。"
+        ],
+        [
+          "端末内に保存される情報",
+          "進行状況、ステージ、モードと難易度、チュートリアルの完了状況、音声と言語設定、ヒント、広告の表示間隔などを端末内に保存します。完了したプレイの履歴（最大80件）、スコア、累積記録、日付別ランキング集計、アカウント別のアップロード状態なども保存されます。ローカルの操作カウンターは Noodlecoil の分析サーバーへ送信されません。一部の累積記録には自動消去期限がありません。"
+        ],
+        [
+          "同意の管理（Google UMP）",
+          "Google User Messaging Platform（UMP 4.0.0）はゲーム起動時に同意情報を確認し、必要に応じて Google の同意画面とプライバシー設定画面を表示します。Google はアプリ識別子、同意関連情報、端末機種、OS、言語、画面情報、IP アドレスなどの接続情報を受信する可能性があります。選択内容は SDK が端末内に保存します。設定を変更しても過去に処理された情報は削除されず、一部 SDK は広告リクエスト前に初期化される場合があります。"
+        ],
+        [
+          "広告（Google AdMob）",
+          "Google Mobile Ads 25.5.0 を使い、全画面広告と任意のリワード広告に対応しています。監査対象のテスト版ではサンプル広告を使い、本番広告は無効です。広告の読み込みと表示は UMP の canRequestAds 判定に従います。端末、同意、設定に応じて Google や広告パートナーが広告識別子、IP から推定される大まかな地域、アプリ・端末情報、広告の表示と操作、診断情報などを扱う場合があります。正確な GPS 位置情報の権限は要求しません。パーソナライズ広告に同意しなくてもプレイできますが、Google への通信がすべて止まるとは限らず、制限付き広告が表示される場合があります。"
+        ],
+        [
+          "Play Games ランキング",
+          "Google Play Games Services v2 22.1.0 が含まれ、任意のログインと累積スコアの全期間ランキングに対応する設計です。Google のプレイヤー ID、公開表示名、送信スコア、順位が処理され、他のプレイヤーにも表示される場合があります。SDK の初期化やログイン確認は自動的に行われる場合があります。キャンペーン進行状況や操作履歴全体はクラウド保存されません。監査対象版には本番用 Play Games ID が設定されていません。"
+        ],
+        [
+          "Google Play の購入とプレミアム",
+          "Google Play Billing 8.3.0 が組み込まれ、広告を削除する買い切り機能 remove_ads に対応する設計です。設定後の決済は Google が処理し、ゲームは購入状態、レシートや購入トークンの参照情報を受け取り、確認済み権利情報をアプリ専用領域に保存する場合があります。カード番号全体は受け取りません。購入状態の確認は起動・復帰時にも行われる場合があります。プレミアムでは自動全画面広告を停止し、任意のリワード広告は利用可能です。監査対象版では本番課金は未設定です。"
+        ],
+        [
+          "外部サービス、権限、バックアップ",
+          "Noodlecoil 独自のサーバー、Firebase Analytics、Crashlytics、カメラ・マイク・連絡先・正確な位置情報の権限は見つかりませんでした。ただし、Google SDK と関連する計測・診断コンポーネントは存在します。独自の分析サービスがないことは、Google のテレメトリーがないことを意味しません。Google や広告パートナーの保存期間には各社の方針が適用されます。Android バックアップは有効で、一部設定や SDK ファイルがバックアップ・復元される可能性があります。WebView の進行状況と課金レシートは明示的なバックアップ除外対象です。本ページの表示時にはブラウザーと GitHub Pages に接続します。"
+        ],
+        [
+          "選択、保存、削除",
+          "パーソナライズ広告への同意や Play Games へのログインなしでもプレイできます。必要な場合は「設定 → Privacy Options」から Google の選択画面を再表示できます。Android のアプリ情報からデータを消去するかアンインストールすると通常は端末内のアプリデータを削除できますが、Google Play Games の順位データ、購入記録、広告データ、バックアップまでは削除されません。Google Play Games のデータ削除、購入管理、Android の広告設定はそれぞれ別の操作です。アプリ内の一括削除機能や全サービス共通の削除窓口はありません。ご請求は noodlecoilgames@gmail.com へお送りください。"
+        ],
+        [
+          "子どもと対象年齢",
+          "監査対象版は一般向け設定で、アプリ内の年齢入力や年齢確認はありません。子ども向けビルドを選択しない限り、同意年齢未満を示すフラグは既定で false です。公開前に対象年齢と必要な保護措置を確認します。"
+        ],
+        [
+          "公開前に必要な確認",
+          "正式な発行者・管理者の情報、対象年齢、AdMob 同意メッセージの公開状態と広告パートナー、本番 Play Games・課金設定、Android 端末での実際の SDK 通信、処理目的と法的根拠、保存期間、国外移転、権利、Google Play のデータ セーフティ申告を確認する必要があります。翻訳も確認し、最終ポリシーへのアプリ内リンクを更新します。"
+        ]
+      ]
+    },
+    "ko": {
+      "language": "한국어",
+      "title": "Unstuck Arrow — 개인정보 안내",
+      "subtitle": "Android v1.17 감사 결과를 반영한 개인정보 안내입니다.",
+      "badge": "감사된 빌드 · 출시 전 초안",
+      "notice": "이 문서는 앱 스토어 제출용 최종 개인정보처리방침이 아닙니다. v1.17 코드, 라이브러리 및 매니페스트는 검토했지만 실제 Android SDK 네트워크 통신, 최종 AdMob 광고 파트너, 운영 설정 및 게시자의 법적 정보는 확인되지 않았습니다. 출시 전에 최종 방침을 완성하고 검토해야 합니다.",
+      "meta": "검토 버전: v1.17(versionCode 27), 2026년 10월 29일. 파일럿에서는 샘플 광고를 사용합니다.",
+      "sections": [
+        [
+          "개발자 및 연락처",
+          "Unstuck Arrow는 Noodlecoil Games라는 공개 브랜드로 개발됩니다. 법적 게시자와 개인정보 처리자는 아직 확정되지 않았습니다. 문의 또는 개인정보 요청은 noodlecoilgames@gmail.com으로 보내 주세요."
+        ],
+        [
+          "기기에 저장되는 정보",
+          "게임은 진행 상황, 레벨, 모드와 난이도, 튜토리얼 완료 여부, 소리와 언어 설정, 힌트, 광고 빈도 정보를 기기에 저장합니다. 최근 완료 기록 최대 80건, 점수, 누적 기록, 날짜별 순위표 합계, 계정별 업로드 체크포인트도 저장합니다. 로컬 이벤트 카운터는 Noodlecoil 분석 서버로 전송되지 않습니다. 일부 누적 기록에는 자동 삭제 기한이 없습니다."
+        ],
+        [
+          "동의 관리(Google UMP)",
+          "Google User Messaging Platform(UMP 4.0.0)은 게임 실행 시 동의 정보를 확인하고 필요할 때 Google의 동의 및 개인정보 옵션 화면을 표시합니다. Google은 앱 식별자, 동의 관련 값, 기기 모델과 운영체제, 언어, 화면 특성, IP 주소 등의 연결 정보를 받을 수 있습니다. 선택 사항은 SDK가 기기에 저장합니다. 설정을 변경해도 과거에 처리된 데이터가 삭제되지는 않으며 일부 SDK는 명시적인 광고 요청 전에 초기화될 수 있습니다."
+        ],
+        [
+          "광고(Google AdMob)",
+          "Google Mobile Ads 25.5.0이 전면 광고와 선택형 보상 광고를 위해 통합되어 있습니다. 검토된 파일럿은 샘플 광고 단위를 사용하며 실제 광고는 꺼져 있습니다. 광고 로드 및 표시는 UMP의 canRequestAds 판정에 따라 제한됩니다. 기기, 동의 및 설정에 따라 Google과 광고 파트너가 광고·앱 식별자, IP 기반 대략적인 위치, 기기·앱 정보, 광고 노출·상호작용 및 진단 데이터를 처리할 수 있습니다. 정확한 GPS 위치 권한은 요청하지 않습니다. 맞춤형 광고를 거부해도 게임을 할 수 있지만 Google 통신이 모두 중지되는 것은 아니며 제한된 광고가 가능할 수 있습니다."
+        ],
+        [
+          "Play Games 순위표",
+          "Google Play Games Services v2 22.1.0은 선택형 로그인과 누적 점수의 전체 기간 순위표를 위해 포함됩니다. Google 플레이어 ID, 공개 표시 이름, 제출 점수와 순위가 처리되거나 다른 플레이어에게 표시될 수 있습니다. SDK 초기화나 로그인 상태 확인은 자동으로 이루어질 수 있습니다. 캠페인 진행 상황 및 전체 이동 기록은 클라우드 저장되지 않습니다. 감사된 빌드에는 운영용 Play Games ID가 설정되지 않았습니다."
+        ],
+        [
+          "Google Play 결제와 프리미엄",
+          "Google Play Billing 8.3.0은 광고 제거용 1회 구매 remove_ads를 위해 통합되어 있습니다. 설정 후 결제는 Google이 처리하며 게임은 구매 상태, 영수증 또는 구매 토큰 참조를 받아 확인된 이용 권한을 앱 전용 저장소에 보관할 수 있습니다. 카드 번호 전체는 받지 않습니다. 구매 상태 조회는 실행 및 복귀 시에도 이루어질 수 있습니다. 프리미엄은 자동 전면 광고를 막지만 보상형 광고는 선택적으로 이용 가능합니다. 감사된 빌드에는 운영 결제가 설정되지 않았습니다."
+        ],
+        [
+          "외부 서비스, 권한 및 백업",
+          "Noodlecoil 자체 서버, Firebase Analytics, Crashlytics 또는 카메라·마이크·연락처·정확한 위치 권한은 발견되지 않았습니다. 하지만 Google SDK와 측정·진단 구성요소는 존재하므로 자체 분석 서비스가 없다고 Google 진단 정보가 없는 것은 아닙니다. Google과 광고 파트너의 보관에는 각 서비스 정책이 적용됩니다. Android 백업이 활성화되어 일부 설정과 SDK 파일은 백업·복원될 수 있습니다. WebView 진행 데이터와 결제 영수증 파일은 명시적으로 백업에서 제외되었습니다. 본 페이지를 열면 브라우저와 GitHub Pages에 연결합니다."
+        ],
+        [
+          "선택, 보관 및 삭제",
+          "맞춤형 광고 동의나 Play Games 로그인 없이도 플레이할 수 있습니다. 필요한 경우 설정의 Privacy Options에서 Google 동의 화면을 다시 열 수 있습니다. Android 앱 정보에서 데이터 삭제 또는 제거를 하면 일반적으로 로컬 데이터가 삭제되지만 Google Play Games 순위, 구매 기록, 광고 관련 데이터, 일부 백업까지 삭제되지는 않습니다. Play Games 데이터 삭제, 구매 관리, Android 광고 개인정보 설정은 별개입니다. 앱 내 전체 삭제 기능이나 모든 제공자 데이터 삭제 서비스는 없습니다. 요청은 noodlecoilgames@gmail.com으로 보내 주세요."
+        ],
+        [
+          "어린이 및 대상 연령",
+          "감사된 설정은 일반 이용자를 대상으로 하며 게임 내 나이 수집이나 나이 확인 기능은 없습니다. 어린이용 빌드를 선택하지 않으면 동의 연령 미만 표시가 기본적으로 false입니다. 출시 전에 대상 연령과 보호 조치를 검토해야 합니다."
+        ],
+        [
+          "출시 전 남은 확인 사항",
+          "법적 게시자·처리자 및 연락처, 대상 연령, AdMob 메시지 게시 여부와 광고 파트너, 실제 Play Games·결제 설정, Android 기기의 SDK 트래픽, 목적과 법적 근거, 보관 기간, 해외 이전 및 권리, Google Play 데이터 보안 신고를 확인해야 합니다. 번역을 검토하고 앱의 최종 정책 링크를 맞춰야 합니다."
+        ]
+      ]
+    },
+    "zh-Hans": {
+      "language": "简体中文",
+      "title": "Unstuck Arrow — 隐私信息",
+      "subtitle": "依据 Android v1.17 审核结果更新的隐私说明。",
+      "badge": "已审核构建版本 · 发布前草稿",
+      "notice": "这不是可直接提交应用商店的最终隐私政策。我们检查了 v1.17 的代码、依赖库和 Android 清单，但尚未验证 Android 设备上的实际 SDK 网络通信、最终 AdMob 合作方、正式服务配置以及发布者的法律身份。发布前必须完成并审阅最终政策。",
+      "meta": "审核版本：v1.17（versionCode 27），2026 年 10 月 29 日；测试版本使用示例广告。",
+      "sections": [
+        [
+          "开发者和联系方式",
+          "Unstuck Arrow 以 Noodlecoil Games 作为公开开发品牌。正式法律发布主体和数据控制者尚未确定。隐私问题或请求请发送邮件至 noodlecoilgames@gmail.com。"
+        ],
+        [
+          "设备上保存的信息",
+          "游戏会在设备本地保存进度、关卡、模式和难度、教程完成状态、声音与语言设置、提示额度和广告展示频率。还保存最近最多 80 条通关记录、分数、累计统计、按日期汇总的排行榜数据，以及按账号区分的上传检查点。本地事件计数不会发送到 Noodlecoil 的分析服务器。部分累计记录没有自动过期时间。"
+        ],
+        [
+          "同意管理（Google UMP）",
+          "Google User Messaging Platform（UMP 4.0.0）会在游戏启动时检查同意状态，并在需要时展示 Google 的同意和隐私选项界面。Google 可能收到应用标识符、同意相关信息、设备型号和操作系统、语言、屏幕参数及 IP 地址等连接信息。SDK 在设备上保存选择。更改偏好不会删除 Google 之前处理的数据；部分 SDK 组件也可能在明确请求广告前初始化。"
+        ],
+        [
+          "广告（Google AdMob）",
+          "已集成 Google Mobile Ads 25.5.0，用于插屏广告和可选激励广告。已检查的测试版本使用示例广告位，正式广告尚未启用。广告加载和展示受 UMP 的 canRequestAds 结果限制。根据设备、同意状态和配置，Google 与广告合作方可能处理广告或应用标识符、根据 IP 推断的大致位置、设备和应用信息、广告展示及互动、诊断和性能数据。游戏不申请精确 GPS 定位权限。拒绝个性化广告不会妨碍游玩，也不意味着 Google 的所有请求都会停止；仍可能提供受限或非个性化广告。"
+        ],
+        [
+          "Play Games 排行榜",
+          "已包含 Google Play Games Services v2 22.1.0，用于可选账号登录和累计分数的历史排行榜。Google 可能处理玩家标识符、公开昵称、提交的分数和名次；其他玩家可能看到这些信息。SDK 初始化和登录状态检查可能自动发生。活动进度和完整操作记录不会作为云存档上传。审核的构建版本尚未配置正式 Play Games ID。"
+        ],
+        [
+          "Google Play 购买与高级版",
+          "已集成 Google Play Billing 8.3.0，计划支持一次性 remove_ads 去广告购买。配置后付款由 Google 处理，游戏可能收到购买状态、收据或购买令牌引用，并在应用私有存储中缓存已验证的权益，不接收完整银行卡号。启动或恢复时也可能查询购买状态。高级版会关闭自动插屏广告，但可选激励广告仍可使用。审核版本未配置正式结算服务。"
+        ],
+        [
+          "第三方、权限和备份",
+          "未发现 Noodlecoil 自建服务器、Firebase Analytics、Crashlytics，或相机、麦克风、联系人、精确定位权限。但 Google SDK 及其测量和诊断组件确实存在，不能因没有自建分析服务就断言 Google 不收集诊断信息。Google 和广告合作方的数据保留遵循各自政策。Android 备份已启用，部分设置和 SDK 文件可能被备份或恢复；WebView 进度和结算收据文件已被明确排除。打开本政策会与浏览器及 GitHub Pages 建立连接。"
+        ],
+        [
+          "选择、保留与删除",
+          "无需同意个性化广告或登录 Play Games 也能游玩。需要时可通过设置中的 Privacy Options 再次打开 Google 选项。通过 Android 应用信息清除数据或卸载通常会删除本地数据，但不会自动删除 Google Play Games 排行榜、购买记录、广告记录或可能存在的云备份。Play Games 数据删除、购买管理和 Android 广告隐私控制需要分别操作。游戏内没有一键清除所有数据功能，也没有统一删除第三方数据的服务。请求请发送至 noodlecoilgames@gmail.com。"
+        ],
+        [
+          "儿童与年龄范围",
+          "审核版本面向一般受众，没有游戏内年龄收集或年龄验证。除非选择儿童专用构建版本，否则默认将低于同意年龄标记设为 false。发布前必须确定目标年龄及相应保护措施。"
+        ],
+        [
+          "发布前仍需完成",
+          "确认法律发布者与数据控制者、联系方式、目标年龄、AdMob 同意消息及广告合作方、正式 Play Games 与结算配置、Android 真机 SDK 网络通信、处理目的和法律依据、保留期限、跨境传输、用户权利及 Google Play 数据安全声明。还需审核翻译并确保应用内链接指向最终政策。"
+        ]
+      ]
+    },
+    "zh-Hant": {
+      "language": "繁體中文",
+      "title": "Unstuck Arrow — 私隱資訊",
+      "subtitle": "根據 Android v1.17 審核結果更新的私隱說明。",
+      "badge": "已審核版本 · 推出前草稿",
+      "notice": "這不是可直接提交應用程式商店的最終私隱政策。我們檢查了 v1.17 的程式碼、依賴程式庫及 Android 清單，但尚未驗證 Android 裝置上的實際 SDK 網絡通訊、最終 AdMob 合作夥伴、正式服務設定及發行者的法律身分。推出前必須完成並審核最終政策。",
+      "meta": "審核版本：v1.17（versionCode 27），2026 年 10 月 29 日；測試版本使用示範廣告。",
+      "sections": [
+        [
+          "開發者及聯絡方法",
+          "Unstuck Arrow 以 Noodlecoil Games 作為對外開發品牌。正式法律發行主體及資料控制者尚未確定。私隱查詢或要求請電郵至 noodlecoilgames@gmail.com。"
+        ],
+        [
+          "裝置內儲存的資料",
+          "遊戲會在裝置本機保存進度、關卡、模式與難度、教學完成狀態、音效及語言設定、提示額度與廣告顯示頻率。亦會保存最近最多 80 筆完成紀錄、分數、累計統計、按日期彙總的排行榜資料，以及按帳戶區分的上傳檢查點。本機事件計數不會傳送至 Noodlecoil 的分析伺服器。部分累計紀錄不會自動過期。"
+        ],
+        [
+          "同意管理（Google UMP）",
+          "Google User Messaging Platform（UMP 4.0.0）會在遊戲啟動時檢查同意狀態，並按需要顯示 Google 的同意及私隱選項畫面。Google 可能收到應用程式識別碼、同意相關資料、裝置型號與作業系統、語言、螢幕參數及 IP 位址等連線資訊。SDK 在裝置內保存選擇。更改設定不會刪除 Google 之前處理的資料；部分 SDK 元件亦可能在明確要求廣告前初始化。"
+        ],
+        [
+          "廣告（Google AdMob）",
+          "已整合 Google Mobile Ads 25.5.0，用於插頁廣告及可選的獎勵廣告。已審核的測試版本使用示範廣告版位，正式廣告尚未啟用。廣告載入和顯示受 UMP 的 canRequestAds 結果限制。視乎裝置、同意狀態及設定，Google 和廣告合作夥伴可能處理廣告或應用程式識別碼、透過 IP 推算的大約位置、裝置與程式資訊、廣告曝光及互動、診斷與效能資料。遊戲不要求精確 GPS 定位權限。拒絕個人化廣告不影響遊玩，也不代表所有 Google 網絡請求會停止；仍可能提供受限制或非個人化廣告。"
+        ],
+        [
+          "Play Games 排行榜",
+          "已包含 Google Play Games Services v2 22.1.0，用於可選帳戶登入及累計分數的歷史排行榜。Google 可能處理玩家識別碼、公開顯示名稱、提交的分數及排名；其他玩家可能看見這些資料。SDK 初始化及登入狀態檢查可能自動進行。闖關進度和完整操作紀錄不會作為雲端存檔上傳。審核版本尚未設定正式 Play Games ID。"
+        ],
+        [
+          "Google Play 購買及進階版",
+          "已整合 Google Play Billing 8.3.0，計劃支援一次性 remove_ads 移除廣告購買。設定後付款由 Google 處理，遊戲可能收到購買狀態、收據或購買權杖參考資料，並在程式私有儲存空間保存已核實的權益，不會取得完整銀行卡號。啟動或返回遊戲時亦可能查詢購買狀態。進階版會停用自動插頁廣告，但可選獎勵廣告仍可使用。審核版本未設定正式收費服務。"
+        ],
+        [
+          "第三方、權限及備份",
+          "未發現 Noodlecoil 自設伺服器、Firebase Analytics、Crashlytics，亦沒有相機、咪高峰、聯絡人或精確定位權限。但 Google SDK 及其測量、診斷元件確實存在，不能因沒有自設分析服務便斷言 Google 不收集診斷資料。Google 及廣告合作夥伴的資料保留按各自政策處理。Android 備份已啟用，部分設定及 SDK 檔案可能被備份或還原；WebView 進度和購買收據檔案已被明確排除。開啟本政策會連接瀏覽器和 GitHub Pages。"
+        ],
+        [
+          "選擇、保留及刪除",
+          "無需同意個人化廣告或登入 Play Games 也可遊玩。需要時可經設定中的 Privacy Options 再次開啟 Google 選項。經 Android 應用程式資訊清除資料或解除安裝通常會刪除本機資料，但不會自動刪除 Google Play Games 排行榜、購買紀錄、廣告資料或可能存在的雲端備份。Play Games 資料刪除、購買管理及 Android 廣告私隱控制需要分別操作。遊戲內沒有一鍵清除所有資料的功能，亦沒有統一刪除第三方資料的服務。請電郵 noodlecoilgames@gmail.com 提出要求。"
+        ],
+        [
+          "兒童及年齡範圍",
+          "審核版本面向一般用戶，遊戲內沒有收集年齡或年齡驗證。除非選用兒童專用版本，低於同意年齡標記預設為 false。推出前必須確定目標年齡及適用的保護措施。"
+        ],
+        [
+          "推出前尚需完成",
+          "確認法律發行者和資料控制者、聯絡資料、目標年齡、AdMob 同意訊息及廣告合作夥伴、正式 Play Games 與收費設定、Android 真機 SDK 網絡通訊、處理目的及法律依據、保留期限、跨境傳輸、用戶權利和 Google Play 資料安全聲明。亦須審核翻譯並確保應用程式內連結指向最終政策。"
+        ]
+      ]
+    },
+    "id": {
+      "language": "Bahasa Indonesia",
+      "title": "Unstuck Arrow — informasi privasi",
+      "subtitle": "Informasi privasi berdasarkan audit Android v1.17.",
+      "badge": "BUILD DIAUDIT · DRAF PRA-RILIS",
+      "notice": "Ini belum merupakan kebijakan privasi final untuk toko aplikasi. Kode, pustaka, dan manifes v1.17 sudah diperiksa, tetapi lalu lintas SDK Android yang sebenarnya, mitra AdMob final, konfigurasi produksi, dan identitas hukum penerbit belum diverifikasi. Kebijakan akhir harus dilengkapi dan ditinjau sebelum dirilis.",
+      "meta": "Build yang ditinjau: v1.17 (versionCode 27), 29 Oktober 2026. Versi uji menggunakan iklan contoh.",
+      "sections": [
+        [
+          "Pengembang dan kontak",
+          "Unstuck Arrow dikembangkan dengan nama publik Noodlecoil Games. Penerbit dan pengendali data yang sah belum ditetapkan. Untuk pertanyaan atau permintaan privasi, email noodlecoilgames@gmail.com."
+        ],
+        [
+          "Informasi yang disimpan di perangkat",
+          "Game menyimpan progres, level, mode dan kesulitan, penyelesaian tutorial, pengaturan suara dan bahasa, kredit petunjuk, dan frekuensi iklan secara lokal. Game juga menyimpan hingga 80 ringkasan permainan yang selesai, skor, statistik kumulatif, total papan peringkat menurut tanggal, dan catatan unggahan menurut akun. Penghitung aktivitas lokal tidak dikirim ke server analitik Noodlecoil. Sebagian total kumulatif tidak memiliki masa berlaku otomatis."
+        ],
+        [
+          "Pilihan persetujuan (Google UMP)",
+          "Google User Messaging Platform (UMP 4.0.0) memeriksa status persetujuan saat game dibuka dan menampilkan formulir persetujuan serta Privacy Options Google bila diperlukan. Google mungkin menerima pengenal aplikasi, nilai persetujuan, model perangkat, sistem operasi, bahasa, rincian layar, dan informasi koneksi seperti alamat IP. SDK menyimpan pilihan pada perangkat. Mengubah pilihan tidak menghapus data yang telah diproses Google; beberapa komponen SDK dapat dimulai sebelum permintaan iklan."
+        ],
+        [
+          "Periklanan (Google AdMob)",
+          "Google Mobile Ads 25.5.0 terintegrasi untuk iklan interstisial dan iklan berhadiah opsional. Build uji memakai unit iklan contoh; iklan produksi belum diaktifkan. Pemuatan dan penayangan iklan dibatasi oleh hasil canRequestAds dari UMP. Bergantung pada perangkat, persetujuan, dan konfigurasi, Google serta mitra iklan dapat memproses pengenal iklan/aplikasi, perkiraan lokasi dari IP, informasi perangkat/aplikasi, tayangan dan interaksi iklan, serta data diagnostik. Game tidak meminta izin lokasi GPS yang tepat. Menolak iklan yang dipersonalisasi tidak menghalangi bermain, tidak selalu menghentikan seluruh permintaan ke Google, dan iklan terbatas tetap mungkin ditampilkan."
+        ],
+        [
+          "Papan peringkat Play Games",
+          "Google Play Games Services v2 22.1.0 disertakan untuk login opsional dan papan peringkat skor kumulatif sepanjang waktu. Google dapat memproses ID pemain, nama tampilan publik, skor yang dikirim, dan peringkat; pemain lain mungkin dapat melihatnya. Inisialisasi SDK atau pemeriksaan login dapat terjadi secara otomatis. Progres kampanye dan riwayat langkah lengkap tidak diunggah sebagai penyimpanan cloud. ID Play Games produksi belum dikonfigurasi dalam build yang diaudit."
+        ],
+        [
+          "Pembelian Google Play dan Premium",
+          "Google Play Billing 8.3.0 disertakan untuk rencana pembelian sekali bayar remove_ads. Jika dikonfigurasi, pembayaran dikelola Google; game dapat menerima status pembelian, tanda terima atau token pembelian, serta menyimpan hak Premium terverifikasi dalam penyimpanan privat. Nomor kartu pembayaran lengkap tidak diterima. Pemeriksaan kepemilikan dapat dilakukan saat mulai atau kembali ke aplikasi. Premium menonaktifkan interstisial otomatis, tetapi iklan berhadiah opsional tetap tersedia. Pembayaran produksi belum dikonfigurasi dalam build audit."
+        ],
+        [
+          "Pihak lain, izin, dan cadangan",
+          "Tidak ditemukan backend milik Noodlecoil, Firebase Analytics, Crashlytics, maupun izin kamera, mikrofon, kontak, atau lokasi tepat. Namun SDK Google dan komponen pengukuran/diagnostik turunannya ada; tidak adanya analitik sendiri bukan berarti Google tidak mengirim telemetri. Penyimpanan oleh Google dan mitra iklan mengikuti kebijakan mereka. Cadangan Android aktif: sebagian preferensi dan berkas SDK dapat dicadangkan atau dipulihkan, sedangkan progres WebView dan berkas tanda terima Billing dikecualikan oleh aturan cadangan aplikasi. Membuka halaman ini juga menghubungi browser dan GitHub Pages."
+        ],
+        [
+          "Pilihan, penyimpanan, dan penghapusan",
+          "Anda tetap dapat bermain tanpa menyetujui iklan personal atau login Play Games. Bila diperlukan, Settings → Privacy Options membuka ulang pilihan Google. Menghapus data aplikasi dari pengaturan Android atau mencopot aplikasi umumnya menghapus data lokal, tetapi tidak otomatis menghapus skor Google Play Games, riwayat pembelian, data iklan, atau semua cadangan cloud. Penghapusan data Play Games, pengelolaan pembelian, dan kontrol privasi iklan Android adalah tindakan terpisah. Tidak ada tombol hapus-semua di game maupun layanan penghapusan universal. Permintaan dapat dikirim ke noodlecoilgames@gmail.com."
+        ],
+        [
+          "Anak-anak dan usia sasaran",
+          "Konfigurasi yang diaudit menargetkan audiens umum tanpa pengumpulan usia atau pemeriksaan usia di dalam game. Penanda di bawah usia persetujuan secara default bernilai false kecuali build khusus anak dipilih. Kelompok usia dan perlindungannya harus ditinjau sebelum rilis."
+        ],
+        [
+          "Hal yang harus diselesaikan sebelum publikasi",
+          "Pastikan identitas hukum penerbit/pengendali dan kontak; usia sasaran; status pesan persetujuan AdMob serta mitra iklan; pengaturan Play Games dan Billing sesungguhnya; lalu lintas SDK di perangkat Android; tujuan dan dasar hukum, masa simpan, transfer internasional, hak pengguna, dan formulir Keamanan Data Google Play. Tinjau terjemahan dan pastikan tautan kebijakan final di dalam aplikasi benar."
+        ]
+      ]
+    },
+    "vi": {
+      "language": "Tiếng Việt",
+      "title": "Unstuck Arrow — thông tin quyền riêng tư",
+      "subtitle": "Thông tin quyền riêng tư dựa trên báo cáo kiểm tra Android v1.17.",
+      "badge": "BẢN ĐÃ KIỂM TRA · DỰ THẢO TRƯỚC PHÁT HÀNH",
+      "notice": "Đây chưa phải chính sách quyền riêng tư cuối cùng dùng để nộp lên cửa hàng ứng dụng. Mã nguồn, thư viện và tệp cấu hình Android của v1.17 đã được kiểm tra, nhưng lưu lượng SDK Android thực tế, đối tác AdMob cuối cùng, cấu hình vận hành và danh tính pháp lý của nhà phát hành vẫn chưa được xác minh. Cần hoàn thiện và rà soát chính sách trước khi phát hành.",
+      "meta": "Bản kiểm tra: v1.17 (versionCode 27), ngày 29/10/2026; bản thử dùng đơn vị quảng cáo mẫu.",
+      "sections": [
+        [
+          "Nhà phát triển và liên hệ",
+          "Unstuck Arrow được phát triển dưới tên công khai Noodlecoil Games. Nhà phát hành hợp pháp và bên kiểm soát dữ liệu chưa được xác nhận. Để hỏi hoặc gửi yêu cầu về quyền riêng tư, hãy viết tới noodlecoilgames@gmail.com."
+        ],
+        [
+          "Thông tin lưu trên thiết bị",
+          "Trò chơi lưu tiến trình, màn chơi, chế độ và độ khó, trạng thái hướng dẫn, cài đặt âm thanh/ngôn ngữ, lượt gợi ý và tần suất quảng cáo trên thiết bị. Ngoài ra còn lưu tối đa 80 bản tóm tắt lượt chơi đã hoàn thành, điểm, thống kê tích lũy, tổng điểm bảng xếp hạng theo ngày và trạng thái tải lên theo tài khoản. Bộ đếm sự kiện nội bộ không được gửi tới máy chủ phân tích của Noodlecoil. Một số tổng tích lũy không có thời hạn tự xóa."
+        ],
+        [
+          "Lựa chọn đồng ý (Google UMP)",
+          "Google User Messaging Platform (UMP 4.0.0) kiểm tra thông tin đồng ý khi mở trò chơi và hiển thị biểu mẫu đồng ý hoặc Privacy Options của Google khi cần. Google có thể nhận mã ứng dụng, dữ liệu liên quan đến sự đồng ý, mẫu thiết bị, hệ điều hành, ngôn ngữ, thông số màn hình và thông tin kết nối/IP. SDK lưu lựa chọn trên thiết bị. Việc thay đổi lựa chọn không xóa dữ liệu Google đã xử lý; một số thành phần SDK có thể khởi tạo trước khi yêu cầu quảng cáo."
+        ],
+        [
+          "Quảng cáo (Google AdMob)",
+          "Google Mobile Ads 25.5.0 đã được tích hợp cho quảng cáo xen kẽ và quảng cáo nhận thưởng tùy chọn. Bản thử đã kiểm tra dùng quảng cáo mẫu, quảng cáo thật chưa bật. Việc tải/hiển thị quảng cáo phụ thuộc kết quả canRequestAds của UMP. Tùy thiết bị, sự đồng ý và cấu hình, Google và đối tác quảng cáo có thể xử lý mã quảng cáo/ứng dụng, vị trí gần đúng suy ra từ IP, thông tin thiết bị/ứng dụng, lượt hiển thị/tương tác và dữ liệu chẩn đoán. Trò chơi không yêu cầu quyền GPS chính xác. Từ chối quảng cáo cá nhân hóa không ngăn chơi, không bảo đảm mọi kết nối Google dừng lại và vẫn có thể có quảng cáo giới hạn."
+        ],
+        [
+          "Bảng xếp hạng Play Games",
+          "Google Play Games Services v2 22.1.0 được bao gồm để hỗ trợ đăng nhập tùy chọn và bảng điểm tích lũy mọi thời kỳ. Google có thể xử lý mã người chơi, tên hiển thị công khai, điểm đã gửi và thứ hạng; người khác có thể xem các thông tin này. SDK có thể tự khởi tạo hoặc kiểm tra đăng nhập. Tiến trình chiến dịch và toàn bộ lịch sử di chuyển không được tải lên làm bản lưu đám mây. Bản kiểm tra chưa cấu hình ID Play Games thật."
+        ],
+        [
+          "Mua hàng qua Google Play và Premium",
+          "Google Play Billing 8.3.0 đã tích hợp cho gói mua một lần remove_ads dự kiến. Khi cấu hình, Google xử lý thanh toán; trò chơi có thể nhận trạng thái mua, biên nhận hoặc mã token giao dịch và lưu quyền lợi đã xác minh trong bộ nhớ riêng của ứng dụng. Trò chơi không nhận toàn bộ số thẻ thanh toán. Việc kiểm tra sở hữu có thể diễn ra khi khởi động hoặc trở lại trò chơi. Premium tắt quảng cáo xen kẽ tự động nhưng quảng cáo nhận thưởng tùy chọn vẫn có thể dùng. Thanh toán thật chưa được cấu hình trong bản kiểm tra."
+        ],
+        [
+          "Dịch vụ khác, quyền và sao lưu",
+          "Không tìm thấy máy chủ riêng của Noodlecoil, Firebase Analytics, Crashlytics hoặc quyền truy cập máy ảnh, micrô, danh bạ hay vị trí chính xác. Tuy vậy có các SDK Google và thành phần đo lường/chẩn đoán đi kèm; không có phân tích riêng không đồng nghĩa với không có dữ liệu chẩn đoán Google. Google và đối tác quảng cáo lưu dữ liệu theo chính sách của họ. Sao lưu Android được bật: một số tùy chọn và tệp SDK có thể được sao lưu/khôi phục, trong khi dữ liệu tiến trình WebView và tệp hóa đơn Billing được loại trừ theo quy tắc sao lưu của ứng dụng. Mở trang này cũng kết nối với trình duyệt và GitHub Pages."
+        ],
+        [
+          "Lựa chọn, lưu giữ và xóa",
+          "Bạn vẫn có thể chơi mà không đồng ý quảng cáo cá nhân hóa hoặc đăng nhập Play Games. Khi cần, Settings → Privacy Options mở lại lựa chọn Google. Xóa dữ liệu ứng dụng trong cài đặt Android hoặc gỡ cài đặt thường xóa dữ liệu cục bộ nhưng không tự xóa dữ liệu xếp hạng Play Games, giao dịch mua, quảng cáo hoặc mọi bản sao lưu. Việc xóa dữ liệu Play Games, quản lý mua hàng và tùy chọn quảng cáo Android là riêng biệt. Trò chơi không có nút xóa tất cả hay dịch vụ xóa dữ liệu toàn bộ nhà cung cấp. Liên hệ noodlecoilgames@gmail.com để yêu cầu."
+        ],
+        [
+          "Trẻ em và độ tuổi",
+          "Cấu hình đã kiểm tra dành cho người chơi nói chung, không thu thập tuổi hoặc kiểm tra tuổi trong trò chơi. Cờ dưới độ tuổi đồng ý mặc định là false trừ khi chọn bản dành riêng cho trẻ em. Cần đánh giá độ tuổi mục tiêu và biện pháp bảo vệ trước khi phát hành."
+        ],
+        [
+          "Những việc còn thiếu trước khi phát hành",
+          "Xác nhận pháp nhân nhà phát hành/bên kiểm soát và liên hệ, độ tuổi, tình trạng xuất bản thông báo đồng ý AdMob và đối tác quảng cáo, cấu hình Play Games/Billing thực tế, lưu lượng SDK trên thiết bị Android, mục đích và cơ sở pháp lý, thời gian lưu, chuyển dữ liệu quốc tế, quyền người dùng và biểu mẫu An toàn dữ liệu Google Play. Rà soát bản dịch và bảo đảm liên kết chính sách cuối cùng trong ứng dụng chính xác."
+        ]
+      ]
+    }
+  }
+}
